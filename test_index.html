@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tabletojson.js" defer></script>
+</head>
+
+<body>
+    <!-- Tabele wzięte z: https://www.w3schools.com/tags/tag_iframe.ASP -->
+    <table class="browserref notranslate">
+        <tbody>
+            <tr>
+                <th style="width:20%;font-size:16px;text-align:left;">Element</th>
+                <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+                <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+                <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+                <th style="width:16%;" class="bsSafari" title="Safari"></th>
+                <th style="width:16%;" class="bsOpera" title="Opera"></th>
+            </tr>
+            <tr>
+                <td style="text-align:left;">&lt;iframe&gt;</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="ws-table-all notranslate">
+        <tbody>
+            <tr>
+                <th style="width:20%">Attribute</th>
+                <th style="width:30%">Value</th>
+                <th style="width:50%">Description</th>
+            </tr>
+            <tr>
+                <td>allow</td>
+                <td>&nbsp;</td>
+                <td>Specifies a feature policy for the &lt;iframe&gt;</td>
+            </tr>
+            <tr>
+                <td>allowfullscreen</td>
+                <td>true<br>false</td>
+                <td>Set to true if the &lt;iframe&gt; can activate fullscreen mode by calling the
+                    requestFullscreen() method</td>
+            </tr>
+            <tr>
+                <td>allowpaymentrequest</td>
+                <td>true<br>false</td>
+                <td>Set to true if a cross-origin &lt;iframe&gt; should be allowed to invoke the
+                    Payment Request API</td>
+            </tr>
+            <tr>
+                <td><a href="att_iframe_height.asp">height</a></td>
+                <td><i>pixels</i></td>
+                <td>Specifies the height of an &lt;iframe&gt;. Default height is 150 pixels</td>
+            </tr>
+            <tr>
+                <td>loading</td>
+                <td>eager<br>lazy</td>
+                <td>Specifies whether a browser should load an iframe immediately or to
+                    defer loading of iframes until some conditions are met</td>
+            </tr>
+            <tr>
+                <td><a href="att_iframe_name.asp">name</a></td>
+                <td><i>text</i></td>
+                <td>Specifies the name of an &lt;iframe&gt;</td>
+            </tr>
+            <tr>
+                <td><a href="att_iframe_referrerpolicy.asp">referrerpolicy</a></td>
+                <td>no-referrer<br>no-referrer-when-downgrade<br>origin<br>
+                    origin-when-cross-origin<br>same-origin<br>strict-origin-when-cross-origin<br>unsafe-url</td>
+                <td>Specifies which referrer information to send when
+                    fetching the iframe </td>
+            </tr>
+            <tr>
+                <td><a href="att_iframe_sandbox.asp">sandbox</a></td>
+                <td>allow-forms<br>allow-pointer-lock<br>allow-popups<br>
+                    allow-same-origin<br>
+                    allow-scripts<br>
+                    allow-top-navigation</td>
+                <td>Enables an extra set of restrictions for the content in an &lt;iframe&gt;</td>
+            </tr>
+            <tr>
+                <td><a href="att_iframe_src.asp">src</a></td>
+                <td><i>URL</i></td>
+                <td>Specifies the address of the document to embed in the &lt;iframe&gt;</td>
+            </tr>
+            <tr>
+                <td><a href="att_iframe_srcdoc.asp">srcdoc</a></td>
+                <td><i>HTML_code</i></td>
+                <td>Specifies the HTML content of the page to show in the &lt;iframe&gt;</td>
+            </tr>
+            <tr>
+                <td><a href="att_iframe_width.asp">width</a></td>
+                <td><i>pixels</i></td>
+                <td>Specifies the width of an &lt;iframe&gt;. Default width is 300 pixels</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+    <!-- Tabele wzięte z: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
+
+    <table class="properties">
+        <tbody>
+            <tr>
+                <th scope="row"><a href="/en-US/docs/Web/HTML/Content_categories">Content categories</a></th>
+                <td>
+                    <a href="/en-US/docs/Web/HTML/Content_categories#flow_content">Flow content</a>,
+                    <a href="/en-US/docs/Web/HTML/Content_categories#palpable_content">palpable content</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Permitted content</th>
+                <td><a href="/en-US/docs/Web/HTML/Content_categories#flow_content">Flow content</a>, but not
+                    containing <code>&lt;form&gt;</code> elements</td>
+            </tr>
+            <tr>
+                <th scope="row">Tag omission</th>
+                <td>None, both the starting and ending tag are mandatory.</td>
+            </tr>
+            <tr>
+                <th scope="row">Permitted parents</th>
+                <td>
+                    Any element that accepts
+                    <a href="/en-US/docs/Web/HTML/Content_categories#flow_content">flow content</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Implicit ARIA role</th>
+                <td><code><a href="/en-US/docs/Web/Accessibility/ARIA/Roles/form_role">form</a></code></td>
+            </tr>
+            <tr>
+                <th scope="row">Permitted ARIA roles</th>
+                <td>
+                    <code><a href="/en-US/docs/Web/Accessibility/ARIA/Roles/search_role">search</a></code>,
+                    <a href="/en-US/docs/Web/Accessibility/ARIA/Roles/none_role"><code>none</code></a>
+                    or <a
+                        href="/en-US/docs/Web/Accessibility/ARIA/Roles/presentation_role"><code>presentation</code></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">DOM interface</th>
+                <td><a href="/en-US/docs/Web/API/HTMLFormElement"><code>HTMLFormElement</code></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="standard-table">
+        <thead>
+            <tr>
+                <th scope="col">Specification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://html.spec.whatwg.org/multipage/forms.html#the-form-element">HTML
+                        Standard<!-- --> <br><small># <!-- -->the-form-element</small></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="bc-table bc-table-web">
+        <thead>
+            <tr class="bc-platforms">
+                <td></td>
+                <th class="bc-platform bc-platform-desktop" colspan="5" title="desktop"><span
+                        class="icon icon-desktop"></span><span class="visually-hidden">desktop</span></th>
+                <th class="bc-platform bc-platform-mobile" colspan="6" title="mobile"><span
+                        class="icon icon-mobile"></span><span class="visually-hidden">mobile</span></th>
+            </tr>
+            <tr class="bc-browsers">
+                <td></td>
+                <th class="bc-browser bc-browser-chrome">
+                    <div class="bc-head-txt-label bc-head-icon-chrome">Chrome</div>
+                    <div class="bc-head-icon-symbol icon icon-chrome"></div>
+                </th>
+                <th class="bc-browser bc-browser-edge">
+                    <div class="bc-head-txt-label bc-head-icon-edge">Edge</div>
+                    <div class="bc-head-icon-symbol icon icon-edge"></div>
+                </th>
+                <th class="bc-browser bc-browser-firefox">
+                    <div class="bc-head-txt-label bc-head-icon-firefox">Firefox</div>
+                    <div class="bc-head-icon-symbol icon icon-simple-firefox"></div>
+                </th>
+                <th class="bc-browser bc-browser-opera">
+                    <div class="bc-head-txt-label bc-head-icon-opera">Opera</div>
+                    <div class="bc-head-icon-symbol icon icon-opera"></div>
+                </th>
+                <th class="bc-browser bc-browser-safari">
+                    <div class="bc-head-txt-label bc-head-icon-safari">Safari</div>
+                    <div class="bc-head-icon-symbol icon icon-safari"></div>
+                </th>
+                <th class="bc-browser bc-browser-chrome_android">
+                    <div class="bc-head-txt-label bc-head-icon-chrome_android">Chrome Android</div>
+                    <div class="bc-head-icon-symbol icon icon-chrome"></div>
+                </th>
+                <th class="bc-browser bc-browser-firefox_android">
+                    <div class="bc-head-txt-label bc-head-icon-firefox_android">Firefox for Android</div>
+                    <div class="bc-head-icon-symbol icon icon-simple-firefox"></div>
+                </th>
+                <th class="bc-browser bc-browser-opera_android">
+                    <div class="bc-head-txt-label bc-head-icon-opera_android">Opera Android</div>
+                    <div class="bc-head-icon-symbol icon icon-opera"></div>
+                </th>
+                <th class="bc-browser bc-browser-safari_ios">
+                    <div class="bc-head-txt-label bc-head-icon-safari_ios">Safari on iOS</div>
+                    <div class="bc-head-icon-symbol icon icon-safari"></div>
+                </th>
+                <th class="bc-browser bc-browser-samsunginternet_android">
+                    <div class="bc-head-txt-label bc-head-icon-samsunginternet_android">Samsung Internet</div>
+                    <div class="bc-head-icon-symbol icon icon-samsunginternet"></div>
+                </th>
+                <th class="bc-browser bc-browser-webview_android">
+                    <div class="bc-head-txt-label bc-head-icon-webview_android">WebView Android</div>
+                    <div class="bc-head-icon-symbol icon icon-webview"></div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="bc-feature bc-feature-depth-0" scope="row">
+                    <div class="bc-table-row-header"><code>form</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2008-12-11">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2004-11-09">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2009-06-08">4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2010-04-03">3.2</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2013-12-09">4.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>accept</code>
+                        <div class="bc-icons" data-test="1"><abbr class="only-icon icon icon-deprecated"
+                                title="Deprecated. Not for use in new websites."><span>Deprecated</span></abbr></div>
+                    </div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2008-12-11">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2004-11-09">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2007-10-26">3</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2008-07-11">2</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2013-12-09">4.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>accept-charset</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2008-12-11">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2004-11-09">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2007-10-26">3</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2008-07-11">2</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2013-12-09">4.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>action</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2008-12-11">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2004-11-09">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2009-06-08">4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2010-04-03">3.2</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2013-12-09">4.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>autocapitalize</code>
+                        <div class="bc-icons" data-test="1"><abbr class="only-icon icon icon-nonstandard"
+                                title="Non-standard. Expect poor cross-browser support."><span>Non-standard</span></abbr>
+                        </div>
+                    </div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2015-05-19">43</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2020-01-15">79</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2023-03-14">111</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2015-06-09">30</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-no bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-no
+              icon
+              icon-no" title="No support"><span class="bc-support-level">No support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label">No</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2015-05-27">43</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2023-03-14">111</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2015-06-10">30</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label">Yes</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2016-03-11">4.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2015-05-27">43</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>autocomplete</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2011-09-16">14</span></div>
+                            <div class="bc-icons"><abbr class="only-icon"
+                                    title="See implementation notes."><span>footnote</span><i
+                                        class="icon icon-footnote"></i></abbr></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2011-03-22">4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                            <div class="bc-icons"><abbr class="only-icon"
+                                    title="See implementation notes."><span>footnote</span><i
+                                        class="icon icon-footnote"></i></abbr></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2012-07-25">6</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                            <div class="bc-icons"><abbr class="only-icon"
+                                    title="See implementation notes."><span>footnote</span><i
+                                        class="icon icon-footnote"></i></abbr></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                            <div class="bc-icons"><abbr class="only-icon"
+                                    title="See implementation notes."><span>footnote</span><i
+                                        class="icon icon-footnote"></i></abbr></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2012-09-10">6</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                            <div class="bc-icons"><abbr class="only-icon"
+                                    title="See implementation notes."><span>footnote</span><i
+                                        class="icon icon-footnote"></i></abbr></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2013-12-09">4.4</span></div>
+                            <div class="bc-icons"><abbr class="only-icon"
+                                    title="See implementation notes."><span>footnote</span><i
+                                        class="icon icon-footnote"></i></abbr></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>enctype</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2008-12-11">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2004-11-09">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2007-10-26">3</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2008-07-11">2</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2013-12-09">4.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>method</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2008-12-11">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2004-11-09">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2007-10-26">3</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2008-07-11">2</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2013-12-09">4.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>name</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2008-12-11">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2004-11-09">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2007-10-26">3</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2008-07-11">2</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2013-12-09">4.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>novalidate</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2011-03-08">10</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2011-03-22">4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2017-03-27">10.1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2017-03-27">10.3</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2014-09-03">37</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>rel</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2022-11-29">108</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2022-12-06">108</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2023-03-14">111</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2022-12-15">94</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2022-03-15">15.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2022-11-29">108</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2023-03-14">111</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2023-01-17">73</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2022-03-15">15.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2023-05-19">21.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2022-11-29">108</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th class="bc-feature bc-feature-depth-1" scope="row">
+                    <div class="bc-table-row-header"><code>target</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
+                                    class="bc-version-label" title="Released 2008-12-11">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
+                                    class="bc-version-label" title="Released 2015-07-28">12</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
+                                    class="bc-version-label" title="Released 2004-11-09">1</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
+                                    class="bc-version-label" title="Released 2013-07-02">15</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
+                        type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
+                                    class="bc-version-label" title="Released 2007-10-26">3</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-chrome_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome Android</span><span
+                                    class="bc-version-label" title="Released 2012-06-27">18</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-firefox_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox for
+                                    Android</span><span class="bc-version-label" title="Released 2011-03-29">4</span>
+                            </div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-opera_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera Android</span><span
+                                    class="bc-version-label" title="Released 2013-05-21">14</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-safari_ios bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari on iOS</span><span
+                                    class="bc-version-label" title="Released 2008-07-11">2</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+                <td class="bc-support bc-browser-samsunginternet_android bc-supports-yes bc-has-history"
+                    aria-expanded="false"><button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">Samsung Internet</span><span
+                                    class="bc-version-label" title="Released 2013-04-27">1.0</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button></td>
+                <td class="bc-support bc-browser-webview_android bc-supports-yes bc-has-history" aria-expanded="false">
+                    <button type="button" title="Toggle history">
+                        <div class="bcd-cell-text-wrapper">
+                            <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
+              bc-level-yes
+              icon
+              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
+                            <div class="bcd-cell-text-copy"><span class="bc-browser-name">WebView Android</span><span
+                                    class="bc-version-label" title="Released 2013-12-09">4.4</span></div>
+                        </div><span class="offscreen">Toggle history</span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Tabele wzięte z: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody -->
+
+    <table class="dobry-przyklad">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Major</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3741255</td>
+                <td>Jones, Martha</td>
+                <td>Computer Science</td>
+            </tr>
+            <tr>
+                <td>3971244</td>
+                <td>Nim, Victor</td>
+                <td>Russian Literature</td>
+            </tr>
+            <tr>
+                <td>4100332</td>
+                <td>Petrov, Alexandra</td>
+                <td>Astrophysics</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="dobry-przyklad">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2">Computer Science</th>
+            </tr>
+            <tr>
+                <td>3741255</td>
+                <td>Jones, Martha</td>
+            </tr>
+            <tr>
+                <td>4077830</td>
+                <td>Pierce, Benjamin</td>
+            </tr>
+            <tr>
+                <td>5151701</td>
+                <td>Kirk, James</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th colspan="2">Russian Literature</th>
+            </tr>
+            <tr>
+                <td>3971244</td>
+                <td>Nim, Victor</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th colspan="2">Astrophysics</th>
+            </tr>
+            <tr>
+                <td>4100332</td>
+                <td>Petrov, Alexandra</td>
+            </tr>
+            <tr>
+                <td>8892377</td>
+                <td>Toyota, Hiroko</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Tabela wzięta z: https://www.w3.org/TR/2011/WD-html5-20110405/tabular-data.html#the-table-element -->
+
+    <table class="dobry-przyklad">
+        <thead>
+            <tr>
+                <th> ID
+                <th> Measurement
+                <th> Average
+                <th> Maximum
+        <tbody>
+            <tr>
+                <td>
+                <th scope=rowgroup> Cats
+                <td>
+                <td>
+            <tr>
+                <td> 93
+                <th> Legs
+                <td> 3.5
+                <td> 4
+            <tr>
+                <td> 10
+                <th> Tails
+                <td> 1
+                <td> 1
+        <tbody>
+            <tr>
+                <td>
+                <th scope=rowgroup> English speakers
+                <td>
+                <td>
+            <tr>
+                <td> 32
+                <th> Legs
+                <td> 2.67
+                <td> 4
+            <tr>
+                <td> 35
+                <th> Tails
+                <td> 0.33
+                <td> 1
+    </table>
+
+
+    <!-- Tabele wzięte z: https://www.w3schools.com -->
+
+    <table id="przyklad-colgroup">
+        <colgroup>
+            <col span="2" style="background-color:red">
+            <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML</td>
+            <td>$53</td>
+        </tr>
+    </table>
+
+    <table id="przyklad-tfoot">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
